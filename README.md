@@ -3,8 +3,8 @@
 Comfy rain for your console written in C with Ncurses.
 
 <p align="center">
-  <img src="https://github.com/nkleemann/comfy/blob/develop/demo/rain.gif" width="53.6%" height="40%"/>
-  <img src="https://github.com/nkleemann/comfy/blob/develop/demo/rain_ho.gif" width="27%" height="100%"/>
+  <img src="https://github.com/nkleemann/ascii-rain/blob/master/demo/rain.gif" width="53.6%" height="40%"/>
+  <img src="https://github.com/nkleemann/ascii-rain/blob/master/demo/rain_ho.gif" width="27%" height="100%"/>
 </p>
 
 Although this was a purely fun-motivated project I challenged myself to keep the code clean 
