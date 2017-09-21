@@ -18,7 +18,7 @@ For OSX try `$ brew install ncurses`.
 ## Build  //  Install
 
 First, download this repo:
-- `$ git clone REPO-URL` 
+- `$ git clone https://github.com/nkleemann/ascii-rain.git` 
 - `$ cd ascii-rain`
 
 To compile and link 'rain':
