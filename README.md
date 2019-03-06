@@ -15,7 +15,13 @@ and hopefully leak-free. Your revision or forking is encouraged.
 You'll need a ncurses library. For Ubuntu packages are: 'ncurses-dev' or 'libncurses-dev'.
 For OSX try `$ brew install ncurses`.
 
-## Build  //  Install
+## Build & Install
+
+## AUR
+
+You can get it from the AUR right [here](https://aur.archlinux.org/packages/ascii-rain-git/).
+
+## Manual
 
 First, download this repo:
 - `$ git clone https://github.com/nkleemann/ascii-rain.git` 
@@ -30,7 +36,7 @@ Now you can run 'rain' in your current working directory by just executing: ` ./
 I you want to be able to run this program from every directory you have to copy the executable to `/usr/local/bin` or `/usr/bin`:
 - `$ cp rain /usr/local/bin/rain`
 
-## Notes // Troubleshooting
+## Notes & Troubleshooting
 
 You'll (Or better, ncurses) need/s a somewhat modern terminal emulator with color support and the ability to hide the
 cursor. Working examples are:
