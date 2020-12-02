@@ -7,8 +7,6 @@ Comfy rain for your console written in C with Ncurses.
   <img src="https://github.com/nkleemann/ascii-rain/blob/master/demo/rain_ho.gif" width="27%" height="100%"/>
 </p>
 
-Although this was a purely fun-motivated project I challenged myself to keep the code clean 
-and hopefully leak-free. Your revision or forking is encouraged. 
 
 ## Dependencies 
 
