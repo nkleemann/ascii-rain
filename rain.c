@@ -37,6 +37,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>  
+#include <errno.h>  
 #include <unistd.h>
 #include <curses.h>
 #include <signal.h>
@@ -312,6 +314,28 @@ void usage()
     printf("Hit 'q' to exit.\n");
 }
 
+// wrapper around nanosleep, replacing deprecated usleep func 
+int mssleep(long msec)
+{
+    struct timespec ts;
+    int res;
+
+    if (msec < 0)
+    {
+        errno = EINVAL;
+        return -1;
+    }
+
+    ts.tv_sec  = msec / 1000;
+    ts.tv_nsec = (msec % 1000) * 1000000;
+
+    do {
+        res = nanosleep(&ts, &ts);
+    } while (res && errno == EINTR);
+
+    return res;
+}
+
 
 int main(int argc, char **argv)
 {
@@ -345,7 +369,7 @@ int main(int argc, char **argv)
         if (userResized)
         {
             // Stabilizing hectic user..
-            usleep(90000);
+            mssleep(90);
 
             dropsTotal = getNumOfDrops();
             v_resize(&drops, dropsTotal);
@@ -362,7 +386,7 @@ int main(int argc, char **argv)
         }
 
         // Frame Delay
-        usleep(30000);
+        mssleep(30);
 
         if ((key = wgetch(stdscr)) == 'q')
             break;
