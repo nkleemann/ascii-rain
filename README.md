@@ -42,4 +42,6 @@ cursor. Working examples are:
 - OSX Terminal
 - xfce4-terminal
 - terminator
+- kitty
+- ghostty
 

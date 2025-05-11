@@ -96,7 +96,7 @@ void exitCurses();
 
 int pRand(int min, int max);
 int getNumOfDrops();
-void handleResize();
+void handleResize(int sig);
 void exitErr(const char *err);
 void usage();
 
@@ -270,7 +270,7 @@ int pRand(int min, int max)
     return min + rand() / (RAND_MAX / (max - min + 1) + 1);
 }
 
-void handleResize()
+void handleResize(int sig)
 {
     endwin();
 
