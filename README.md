@@ -26,7 +26,7 @@ To compile and link 'rain':
 
 Now you can run 'rain' in your current working directory by just executing: ` ./rain`.
 
-I you want to be able to run this program from every directory you have to copy the executable to `/usr/local/bin` or `/usr/bin`:
+If you want to be able to run this program from every directory you have to copy the executable to `/usr/local/bin` or `/usr/bin`:
 - `$ cp rain /usr/local/bin/rain`
 
 ### AUR
